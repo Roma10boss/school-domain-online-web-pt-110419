@@ -4,10 +4,12 @@ class School
   def initialize(school_name)
   @school_name= school_name
   @roster = {}
-end 
+  end 
+  
 def roster
  @roster 
 end 
+
 def add_student(name,grade)
   @student_name = name
   @grade = grade 
@@ -16,9 +18,11 @@ def add_student(name,grade)
   end 
   @roster[grade] << name 
 end 
+
 def grade(number) 
  @roster[number]
 end 
+
 def sort
  @roster.each do |grade, name|
    @roster[grade] = name.sort 
