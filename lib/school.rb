@@ -1,4 +1,5 @@
 # code here!
+require 'pry'
 class School 
   def initialize(school_name)
   @school_name= school_name
@@ -21,6 +22,8 @@ end
 def sort
  @roster.each do |grade, name|
    @roster[grade] = name.sort 
+   binding.pry 
+   
  end 
 end 
 end 
